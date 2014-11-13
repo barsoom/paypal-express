@@ -8,7 +8,7 @@ describe Paypal::Util do
       Paypal::Util.formatted_amount(BigDecimal('10.02')).should == '10.02'
       Paypal::Util.formatted_amount(BigDecimal('10.2')).should == '10.20'
       Paypal::Util.formatted_amount(BigDecimal('10.24')).should == '10.24'
-      Paypal::Util.formatted_amount(BigDecimal('10.255')).should == '10.25'
+      Paypal::Util.formatted_amount(BigDecimal('10.255')).should == '10.26'
     end
   end
 
